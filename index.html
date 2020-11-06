@@ -10,6 +10,59 @@
   <title>Pizza to Preference</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pizza Parlor Order Page</h1>
+      <h4>Please select size and toppings for desired pizza. All pizzas are made thin-crust. Press the button at the bottom to add your custom pizza to the full order. Once all your pizzas have been added, click "Complete" to finalize your order. A total price for the order will display.</h4>
+    </div>
+    <div  class="form-check">
+      <form>
+        <div class="size-pick">
+          <h2>Select First Pizza Size</h2>
+          <label>
+            <input type="radio" name="sizePick" value="large" checked>
+            Large (18")
+          </label>
+          <label>
+            <input type="radio" name="sizePick" value="small">
+            Small (14")
+          </label>
+        </div>
+        <div class="form-check">
+          <h3>Select Toppings</h3>
+          <p>Grayed-out items are out of stock and unavailable</p>
+          <!-- you must specify id and for attributes to relate the <input> and <label>. -->
+          <label class="form-check-label" for="pepperoni">pepperoni</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="pepperoni" value="pepperoni">
+          <label class="form-check-label" for="mushroom">mushroom</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="mushroom" value="mushroom">
+          <label class="form-check-label" for="extra-cheese">extra mozzarella</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="extra-cheese" value="extraCheese">
+          <label class="form-check-label" for="artichokes">artichokes</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="artichokes" value="artichokes">
+          <label class="form-check-label" for="bell-peppers">bell pepper</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="bell-peppers" value="bellPeppers">
+          <label class="form-check-label" for="buffalo-chix">buffalo chicken</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="buffalo-chix" value="buffaloChix">
+          <label class="form-check-label" for="grilled-chix">grilled bbq chicken</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="grilled-chix" value="grilledChix">
+          <label class="form-check-label" for="pineapple">pineapple</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="pineapple" value="pineapple">
+          <label class="form-check-label" for="ham">ham</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="ham" value="ham">
+          <label class="form-check-label" for="goat-cheese">goat cheese</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="goat-cheese" value="goatCheese">
+          <label class="form-check-label" for="gorgonzola">gorgonzola</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="gorgonzola" value="gorgonzola">
+          <label class="form-check-label" for="arugula">arugula</label>
+          <input class="form-check-input" type="checkbox" name="toppings-select" id="arugula" value="arugula" disabled>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="btn btn-outline-primary btn-lg">add this pizza</button>
+          <button type="button" class="btn btn-outline-success btn-lg" disabled>get my total</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
