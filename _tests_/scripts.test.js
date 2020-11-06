@@ -22,7 +22,7 @@
 // Test: It will store a key-value pair for small pizza price.
 // Expect: PizzaOrderPrice(this.smallPrice).toEqual(number)
 
-// Describe: calculateTotal(pizzaOrderPrice)
+// Describe: calculateTotal(pizzaOrderPrice, pizzaOrder)
 
-// Test: It will return a number that equals the price for an instance of new PizzaOrderPrice.
-// Expect: calculateTotal(pizzaOrderPrice).toEqual(number)
+// Test: It will return a number that equals the price for an instance of new PizzaOrder based on large and small prices stored on instance of PizzaOrderPrice.
+// Expect: calculateTotal(pizzaOrderPrice, pizzaOrder).toEqual(number)
