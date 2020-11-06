@@ -15,7 +15,7 @@
       <h1>Pizza Parlor Order Page</h1>
       <h4>Please select size and toppings for desired pizza. All pizzas are made thin-crust. Press the button at the bottom to add your custom pizza to the full order. Once all your pizzas have been added, click "Complete" to finalize your order. A total price for the order will display.</h4>
     </div>
-    <div  class="form-check">
+    <div>
       <form>
         <div class="size-pick">
           <h2>Select First Pizza Size</h2>
@@ -58,10 +58,15 @@
           <input class="form-check-input" type="checkbox" name="toppings-select" id="arugula" value="arugula" disabled>
         </div>
         <div class="form-buttons">
-          <button type="button" class="btn btn-outline-primary btn-lg">add this pizza</button>
-          <button type="button" class="btn btn-outline-success btn-lg" disabled>get my total</button>
+          <button type="button" class="btn btn-outline-light btn-lg" id="reset-toppings">clear all toppings</button>
+          <button type="button" class="btn btn-outline-primary btn-lg" id="add-selections">add this pizza</button>
+          <button type="button" class="btn btn-outline-success btn-lg" id="calc-total" disabled>get my total</button>
         </div>
       </form>
+      <div class="results invisible">
+        <h2 class="your-order"></h2>
+        <p class="total-here"></p>
+      </div>
     </div>
   </div>
 </body>
