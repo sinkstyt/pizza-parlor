@@ -46,9 +46,9 @@ $("document").ready(function() {
       
     })
     // append pizza1 details to results div
-
+    
     // once pizza1 is submitted towards total, div.results.show();
-
+    
     // Once Total.my.Order button is clicked, call appropriate func from B Logic
 
     // set .html of appropriate div.results child to display the order's total --> Maybe an h3 element?

@@ -1,0 +1,13 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+}
+h1 .jumbotron {
+  font-family: 'Trispace', sans-serif; // Trispace has only two weights available (400 and 700)
+  font-weight: 700;
+  text-align: right;
+}
+h4 .jumbotron {
+  text-align: justify;
+  font-family: 'Trispace', sans-serif;
+  font-weight: 400
+}
