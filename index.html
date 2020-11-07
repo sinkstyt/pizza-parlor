@@ -15,8 +15,14 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Pizza Parlor Order Page</h1>
-      <h4>Please select size and toppings for desired pizza. All pizzas are made thin-crust. Press the button at the bottom to add your custom pizza to the full order. Once all your pizzas have been added, click "Complete" to finalize your order. A total price for the order will display.</h4>
+      <h1 id="title-heading">Pizza Parlor Order Page</h1>
+      <h4>Welcome to <strong class="subheading">Tartuffo's Strangely Burnt Pies</strong>. Please enter your selections for pizza size and toppings one pie at a time.</h4>
+      <ul>
+        <li>All pies are thin-crust. We do not abide our dough to be thrown and spun in the air.</li>
+        <li>Once you've filled in desired size and topping(s), press the button at the bottom to add your custom pizza to the full order.</li>
+        <li>Add subsequent pie or pies as desired. Once all your pizzas appear correctly on this page, click "Complete" to finalize your order.</li>
+        <li>A total price for the order will display.</li>
+      </ul>
     </div>
     <div>
       <form>
@@ -32,8 +38,8 @@
           </label>
         </div>
         <div class="form-check">
-          <h3>Select Toppings</h3>
-          <p>Grayed-out items are out of stock and unavailable</p>
+          <h3>Tick the boxes for desired toppings. No halves.</h3>
+          <p>Grayed-out checkboxes indicate topping is out of stock and unavailable.</p>
           <!-- you must specify id and for attributes to relate the <input> and <label>. -->
           <label class="form-check-label" for="pepperoni">pepperoni</label>
           <input class="form-check-input" type="checkbox" name="toppings-select" id="pepperoni" value="pepperoni">

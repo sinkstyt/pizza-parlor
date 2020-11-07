@@ -1,7 +1,11 @@
 body {
   font-family: 'Libre Baskerville', serif;
+  background-color: #fae6fa;
 }
-h1 .jumbotron {
+.jumbotron {
+  background: #73AD21;
+}
+#title-heading {
   font-family: 'Trispace', sans-serif; // Trispace has only two weights available (400 and 700)
   font-weight: 700;
   text-align: right;
@@ -9,5 +13,22 @@ h1 .jumbotron {
 h4 .jumbotron {
   text-align: justify;
   font-family: 'Trispace', sans-serif;
-  font-weight: 400
+  font-weight: 400;
+  vertical-align: middle;
+  border-radius: 0% 0% 35% 35%;
+  margin: 3em;
+  padding: 3em;
+  border: double thistle;
+}
+.form-check-input {
+  clear: right;
+}
+.form-check-label {
+  clear: left;
+  margin-left: 6rem;
+  padding-inline-end: 1.4rem;
+}
+.subheading {
+  font-size-adjust: unset;
+  font-size: 1.8rem;
 }
