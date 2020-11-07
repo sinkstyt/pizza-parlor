@@ -40,11 +40,8 @@ $("document").ready(function() {
     // reassign pizza1.size to match radio button checked
     let pizza1.size = $("input:radio[name=sizePick]:checked").val();
     // push toppings checked for pizza1 into pizza1.toppings array
-   pizza1.toppings.push($("input:checkbox[name=toppings-select]:checked").val());
-    console.log(`current value stored at selectedToppings: ${selectedToppings}`);
-    pizzaOrderNow.toppings = pizza1.toppings.map(function(topping) {
-      
-    })
+    pizza1.toppings = $("input:checkbox[name=toppings-select]:checked").val();
+    console.dir(pizza1.toppings);
     // append pizza1 details to results div
     
     // once pizza1 is submitted towards total, div.results.show();
@@ -54,4 +51,19 @@ $("document").ready(function() {
     // set .html of appropriate div.results child to display the order's total --> Maybe an h3 element?
 
   })
+  // "reset-toppings" button ---- >
+  $("#reset-toppings").click(function() {
+    
+  })
+
+  // "get my total" button ----- >
+  $("#calc-total").click(function() {
+
+  })
 })
+
+/* $("#goal-button").click(function() {
+  $("#goal-list").append("<li class='list-item'>" + $("#new-goal").val() + "</li>");
+  $("#new-goal").val("");
+});
+the above is a way to append child list item elements and then reset the value to an empty str
