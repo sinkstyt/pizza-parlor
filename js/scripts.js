@@ -23,7 +23,20 @@ function calculateTotal(pizzaOrderPrice, pizzaOrder) {
   orderTotal *= 1.08875; // add NYC sales tax
   return orderTotal;
 }
+// write a function who takes values stored within an array ON an object and plops each value stored on array to a string, comma seperated:
+function stringify(arr){
+  let str = "";
+  arr.forEach
+}
+// write a function who takes a pizza instance and plops all the pertinent key-values from this.pizzaInstance to a concatenated string. It will hold text that the user will see. The ultimate display is one that indicates decisions already submitted per pizza. A la "cart" pun slightly intended.<ul>
+function (pizzaEntry, pizzaOrder) {
+  let htmlPizzaEntries = `<li>${pizzaEntry.namOPizza}.  Size: ${pizzaEntry.size}<br>Toppings: ${pizzaEntry.toppings}.  Base Price for ${pizzaEntry.size} pie: ${}</li>`
+  return htmlPizzaEntries;
+}
 // function that is called on checkbox-gathered input data for all checked toppings. Function takes in an array as first arg, string as pulled using jQuery .val() as second arg
+function gatherCheckeds() {
+
+}
 //  Should return an instance of PIzzaOrder constructor with appropriate key-values adjusted (toppingsCount by size of pizza)
 function someToppings(arr, str) {
   pizzaOrderNow.
@@ -38,12 +51,15 @@ $("document").ready(function() {
     let pizzaOrderNow = new PizzaOrder;
     let pizzaOrderCurrentPrices = new PizzaOrderPrice;
     // reassign pizza1.size to match radio button checked
-    let pizza1.size = $("input:radio[name=sizePick]:checked").val();
+    pizza1.size = $("input:radio[name=sizePick]:checked").val();
     // push toppings checked for pizza1 into pizza1.toppings array
     pizza1.toppings = $("input:checkbox[name=toppings-select]:checked").val();
     console.dir(pizza1.toppings);
     // append pizza1 details to results div
+    $("h3.order-summary").prepend(<li>+</li>)
     
+
+
     // once pizza1 is submitted towards total, div.results.show();
     
     // Once Total.my.Order button is clicked, call appropriate func from B Logic
